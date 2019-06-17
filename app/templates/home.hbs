@@ -3,6 +3,9 @@
   <h2>Sner 4 shodan</h2>
 </div>
 
-{{#each this.model as |serviceUint|}}
+{{#each this.model as |host|}}
+  <Host @host={{host}}/>
+  {{#each this.model as |serviceUint|}}
   <Service @services={{serviceUint}}/>
+  {{/each}}
 {{/each}}

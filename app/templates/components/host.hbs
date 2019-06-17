@@ -1,3 +1,11 @@
 <article class="host">
-        
+        <div class="host_data">
+        <span class="host_name">
+        <h3><span>Name:</span>{{this.host.host_name}}</h3>
+        </span> 
+        {{#each this.host as |serviceUint|}}
+        <p>test</p>
+        <Service @services={{serviceUint}}/>
+        {{/each}}
+        </div>
 </article>
